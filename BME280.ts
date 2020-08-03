@@ -148,6 +148,15 @@ namespace BME280 {
     }
 
     /**
+     * reset
+     */
+    //% blockId="BME280_RESET" block="Reset"
+    //% weight=50 blockGap=8
+    export function Reset() {
+        setreg(0xE0, 0xB6)
+    }
+
+    /**
      * power on
      */
     //% blockId="BME280_POWER_ON" block="Power On"
